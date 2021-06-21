@@ -1,0 +1,166 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto';
+    --text-primary: grey;
+    --text-secondary: white;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+
+}
+
+/*---ScrollBar---*/
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ececee
+}
+
+/*---Body---*/
+
+body {
+    color: white;
+    background-color: #0e0e12;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.row {
+    display: flex;
+    height: 80%;
+    margin-left: 2rem;
+    padding: 10rem;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+h1 {
+    font-size: 40px;
+    text-shadow: 0 10px #5e0151, 0 0 40px #5e0151, 0 0 10px #5e0151
+}
+
+/*---Cards---*/
+.card{
+    width: 260px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    transition: 0.4s
+}
+
+.card h5{
+    font-size: 20px;
+    text-shadow: 0 0 5px #999;
+    margin-bottom: 10%;
+}
+
+.card p{
+    text-shadow: 0 0 5px #999;
+}
+.card1{
+    background-image: url("https://criticalhits.com.br/wp-content/uploads/2020/05/attack-on-titan-910x552.jpg");
+}
+.card2{
+    background-image: url("https://cursosavante.com.br/wp-content/uploads/2016/10/Piano-B%C3%A1sico.jpg");
+}
+.card3{
+    background-image: url("https://analyticsinsight.b-cdn.net/wp-content/uploads/2020/11/Artificial-Intelligence-5.jpg");
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #999;
+
+}
+
+.sobre-btn {
+    width: 40px;
+    color: #000;
+    font-size: 17px;
+    padding: 4px 30px;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+.sobre-btn:hover{
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.2);
+}
+/*---Navbar---*/
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    width: 50%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.link-text{
+    display: block;
+    margin-left: 0rem;
+    width: 50%
+}
+
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+/*---Logo---*/
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.link-text{
+    width: 50%;
+}
